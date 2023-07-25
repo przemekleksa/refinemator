@@ -1,0 +1,35 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent dark background */
+  .root {
+    color: #f4f4f8;
+    border: 0px;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #fe4a49;
+    min-width: 400px;
+    min-height: 400px;
+    position: absolute;
+    margin: auto;
+    .close {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 10px;
+      color: white;
+      font-size: 20px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .children {
+      margin-top: 50px;
+    }
+  }
+}
