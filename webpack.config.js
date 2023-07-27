@@ -13,11 +13,13 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          'sass-loader',
           {
-            loader: 'sass-loader',
-            options: {
-              additionalData: `@import "${path.resolve(__dirname, 'src/styles/_variables.scss')}";`,
-            },
+            loaders: [
+              'style-loader',
+              'css-loader?sourceMap',
+              'sass-loader?{"sourceMap":true,"includePaths":["app/styles"]}',
+            ],
           },
         ],
       },

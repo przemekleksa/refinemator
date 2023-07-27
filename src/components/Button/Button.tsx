@@ -7,11 +7,16 @@ interface Props {
   children: React.ReactNode;
   className?: string;
   onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
 }
 
-export const Button = ({ color = 'tertiary', children, className, onClick }: Props) => {
+export const Button = ({ color = 'tertiary', children, className, onClick, type }: Props) => {
   return (
-    <button className={cx(styles.root, className, styles[`${color}`])} onClick={onClick}>
+    <button
+      type={type}
+      className={cx(styles.root, className, styles[`${color}`])}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

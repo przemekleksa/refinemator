@@ -1,13 +1,13 @@
-export interface SectionState {
-  sections: Section[];
-}
+// export interface SectionState {
+//   sections: Section[];
+// }
 
-interface Section {
-  name: null;
-  color: null;
-  id: null;
-  icon: null;
-  pros: null;
-  cons: null;
-  visibility: null;
+export interface Section {
+  name: string;
+  color: string;
+  id: string;
+  icon?: string;
+  pros?: string;
+  cons?: string;
+  visibility?: string;
 }

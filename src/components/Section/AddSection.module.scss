@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+input,
+textarea,
+option {
+  padding: 6px;
+  border-radius: 10px;
+}

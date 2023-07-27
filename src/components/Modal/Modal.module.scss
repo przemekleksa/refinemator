@@ -13,11 +13,12 @@
     border: 0px;
     border-radius: 4px;
     padding: 12px;
-    background-color: #fe4a49;
+    background-color: #009fb7;
     min-width: 400px;
     min-height: 400px;
     position: absolute;
     margin: auto;
+    border-radius: 10px;
     .close {
       background: none;
       border: none;
@@ -29,7 +30,7 @@
       cursor: pointer;
     }
     .children {
-      margin-top: 50px;
+      margin-top: 20px;
     }
   }
 }
