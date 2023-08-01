@@ -17,3 +17,14 @@
 .tertiary {
   background: #009fb7;
 }
+
+.round {
+  border-radius: 50%;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 0px;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.5);
+  }
+}

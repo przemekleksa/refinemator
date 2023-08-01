@@ -1,0 +1,18 @@
+.root {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  margin: 8px;
+}
+
+.odd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.even {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

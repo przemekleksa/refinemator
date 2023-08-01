@@ -8,8 +8,6 @@ export const initState: Section[] = [
     color: 'red',
     id: '1',
     icon: 'test',
-    // pros: 'test',
-    // cons: 'test',
     visibility: 'test',
   },
   {
@@ -17,8 +15,20 @@ export const initState: Section[] = [
     color: 'blue',
     id: '2',
     icon: 'test',
-    // pros: 'test',
-    // cons: 'test',
+    visibility: 'test',
+  },
+  {
+    name: 'continue',
+    color: 'orange',
+    id: '3',
+    icon: 'test',
+    visibility: 'test',
+  },
+  {
+    name: 'start',
+    color: 'yellow',
+    id: '4',
+    icon: 'test',
     visibility: 'test',
   },
 ];
@@ -30,8 +40,6 @@ export const sectionsReducer = createReducer(initState, builder =>
       return state;
     })
     .addCase(addSection, (state, { payload }) => {
-      // state = [...state, payload];
-      // return state;
-      state.push(payload); // czy odswierza sie dokumenty?
+      state.push(payload);
     })
 );

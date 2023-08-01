@@ -1,0 +1,84 @@
+.root {
+  width: 100%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      padding: 8px 0px 0px 8px;
+    }
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.blue {
+  background-color: #0000ff;
+}
+
+.yellow {
+  background-color: #ffff00;
+  color: black;
+}
+
+.aqua {
+  background-color: #00ffff;
+  color: black;
+}
+
+.magenta {
+  background-color: #ff00ff;
+}
+
+.silver {
+  background-color: #c0c0c0;
+  color: black;
+}
+
+.gray {
+  background-color: #808080;
+  color: black;
+}
+
+.maroon {
+  background-color: #800000;
+}
+
+.olive {
+  background-color: #808000;
+}
+
+.lime {
+  background-color: #00ff00;
+}
+
+.purple {
+  background-color: #800080;
+}
+
+.teal {
+  background-color: #008080;
+}
+
+.navy {
+  background-color: #000080;
+}
+
+.orange {
+  background-color: #ffa500;
+}
+
+.white {
+  background-color: #ffffff;
+  color: black;
+}
