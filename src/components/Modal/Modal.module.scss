@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent dark background */
+  background: rgba(0, 0, 0, 0.5);
   .root {
     color: #f4f4f8;
     border: 0px;
@@ -15,7 +15,7 @@
     padding: 12px;
     background-color: #009fb7;
     min-width: 400px;
-    min-height: 400px;
+    // min-height: 400px;
     position: absolute;
     margin: auto;
     border-radius: 10px;

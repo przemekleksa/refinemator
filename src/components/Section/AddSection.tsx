@@ -8,15 +8,17 @@ import { ErrorMessage, Field, Formik } from 'formik';
 import * as yup from 'yup';
 import { v4 } from 'uuid';
 
-export const AddSection = () => {
+interface Props {
+  onClose?: () => void;
+}
+
+export const AddSection = ({ onClose }: Props) => {
   const dispatch = useDispatch();
   const initialSectionState: Section = {
     name: '',
     color: '',
     id: '',
     icon: '',
-    pros: '',
-    cons: '',
     visibility: '',
   };
   const [sectionData, setSectionData] = useState<Section>(initialSectionState);
@@ -40,19 +42,33 @@ export const AddSection = () => {
     };
 
     dispatch(addSection(section));
+    onClose && onClose();
   };
 
   const formSchema = yup.object().shape({
-    name: yup.string().required('Name is required'),
+    name: yup.string().required('Name is required').max(20, 'Name is too long'),
     color: yup.string().required('Color is required'),
     id: yup.string().required('ID is required'),
     // You can add more validation rules for other fields if needed
   });
 
   const colorOptions = [
-    { label: 'Black', value: 'black' },
-    { label: 'Yellow', value: 'yellow' },
+    { label: 'Red', value: 'red' },
     { label: 'Green', value: 'green' },
+    { label: 'Blue', value: 'blue' },
+    { label: 'Yellow', value: 'yellow' },
+    { label: 'Aqua', value: 'aqua' },
+    { label: 'Magenta', value: 'magenta' },
+    { label: 'Silver', value: 'silver' },
+    { label: 'Gray', value: 'gray' },
+    { label: 'Maroon', value: 'maroon' },
+    { label: 'Olive', value: 'olive' },
+    { label: 'Lime', value: 'lime' },
+    { label: 'Purple', value: 'purple' },
+    { label: 'Teal', value: 'teal' },
+    { label: 'Navy', value: 'navy' },
+    { label: 'Orange', value: 'orange' },
+    { label: 'White', value: 'white' },
   ];
 
   return (

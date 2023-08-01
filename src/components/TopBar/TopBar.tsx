@@ -11,14 +11,14 @@ export const TopBar = () => {
   return (
     <div className={styles.root}>
       <div className={styles.logo}>
-        Refinemator
+        Retromator
         <img src={RFT} alt="" />
       </div>
       TopBar
       <Button onClick={() => setOpenModal(true)}>Add section</Button>
       {openModal && (
         <Modal onClose={() => setOpenModal(!openModal)}>
-          <AddSection />
+          <AddSection onClose={() => setOpenModal(!openModal)} />
         </Modal>
       )}
     </div>
